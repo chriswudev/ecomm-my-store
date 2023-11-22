@@ -13,14 +13,10 @@ interface WrapperProps {
 }
 
 const Wrapper = styled.div<WrapperProps>`
-  padding: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: ${(props) =>
-    props.lazy ? '' : 'calc(100vh - (var(--header-height)))'};
-
-  margin-top: ${(props) => (props.lazy ? '' : 'var(--header-height)')};
+  min-height: calc(100vh - (var(--header-height)) - 20rem);
 
   @keyframes spinner {
     to {

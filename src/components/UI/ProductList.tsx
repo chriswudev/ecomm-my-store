@@ -47,9 +47,6 @@ const Wrapper = styled.div`
     transition: var(--transition);
     min-height: 35rem;
     max-width: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
     &:hover {
       box-shadow: 0 0 1rem 1rem var(--gray-color-2);
