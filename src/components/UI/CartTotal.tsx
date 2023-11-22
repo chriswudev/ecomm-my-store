@@ -30,7 +30,7 @@ const Wrapper = styled.article`
   padding: 1rem 1.5rem;
 
   ${Screens.lg`
-    align-self: flex-start;
+    align-self: center;
   `}
 
   .total__items {
