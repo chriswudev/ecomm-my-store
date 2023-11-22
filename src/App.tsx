@@ -1,15 +1,17 @@
 import { HashRouter as Router } from 'react-router-dom';
 
-import { Navbar, Sidebar, Main, Footer } from './components/Layouts';
+import { Navbar, Main } from './components/Layouts';
+import { GlobalStyles } from './styles';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Sidebar />
-      <Main />
-      <Footer />
-    </Router>
+    <>
+      <GlobalStyles />
+      <Router>
+        <Navbar />
+        <Main />
+      </Router>
+    </>
   );
 }
 
